@@ -1,0 +1,43 @@
+<h2>Row</h2>
+
+<p>A row distributes columns similar to bootstrap.</p>
+
+<%= render 'example' do %>
+  <div class="row">
+    <div class="row__column--6">Bananas</div>
+    <div class="row__column--3">Beans</div>
+    <div class="row__column--3">Bras</div>
+  </div>
+<% end %>
+
+<p>Use <code>.row--#{space-name}<code> to add space between items.</p>
+
+<%= render 'example' do %>
+  <div class="row row--space-100">
+    <div class="row__column--6">Bananas</div>
+    <div class="row__column--3">Beans</div>
+    <div class="row__column--3">Bras</div>
+  </div>
+<% end %>
+
+<p>Use <code>.row--align-#{start | center | end}</code> to align items horizontally.</p>
+
+<%= render 'example' do %>
+  <div class="row row--align-center">
+    <div class="row__column--3">Beans</div>
+    <div class="row__column--3">Bras</div>
+  </div>
+<% end %>
+
+<p>
+  Use <code>.row--#{sm | md | lg | xl | xxl}-#{modifier}</code> to only
+  apply modifier on certain breakpoints.
+</p>
+
+<%= render 'example' do %>
+  <div class="row row--md-space-100">
+    <div class="row__column--6">Bananas</div>
+    <div class="row__column--3">Beans</div>
+    <div class="row__column--3">Bras</div>
+  </div>
+<% end %>
