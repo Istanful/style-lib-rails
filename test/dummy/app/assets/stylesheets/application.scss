@@ -14,23 +14,26 @@
  *= require_self
  */
 
+@import "style/lib/rails/_reset.scss";
 @import "style/lib/rails/_responsiveness.scss";
 @import "style/lib/rails/_variables.scss";
 @import "style/lib/rails/_stack.scss";
 @import "style/lib/rails/_inline.scss";
 @import "style/lib/rails/_row.scss";
 
-.stack,
-.stack__item,
-.inline,
-.inline__item,
-.row,
-[class^="row__column"] {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
+.example__illustration {
+  .stack,
+  .stack__item,
+  .inline,
+  .inline__item,
+  .row,
+  [class^="row__column"] {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-.stack__item,
-.inline__item,
-[class^="row__column"] {
-  background: cornflowerblue;
+  .stack__item,
+  .inline__item,
+  [class^="row__column"] {
+    background: cornflowerblue;
+  }
 }

@@ -1,44 +1,48 @@
-<h2>Inline</h2>
+<div class="stack stack--space-200">
+  <div class="stack stack--space-100">
+    <h2>Inline</h2>
 
-<p>Inline distributes items horizontally.</p>
-
-<%= render 'example' do %>
-  <div class="inline">
-    <div class="inline__item">Bananas</div>
-    <div class="inline__item">Beans</div>
-    <div class="inline__item">Bras</div>
+    <p>Inline distributes items horizontally.</p>
   </div>
-<% end %>
 
-<p>Use <code>.inline--#{space-name}</code> to add spacing between items.</p>
+  <%= render 'example' do %>
+    <div class="inline">
+      <div class="inline__item">Bananas</div>
+      <div class="inline__item">Beans</div>
+      <div class="inline__item">Bras</div>
+    </div>
+  <% end %>
 
-<%= render 'example' do %>
-  <div class="inline inline--space-100">
-    <div class="inline__item">Bananas</div>
-    <div class="inline__item">Beans</div>
-    <div class="inline__item">Bras</div>
-  </div>
-<% end %>
+  <p>Use <code>.inline--#{space-name}</code> to add spacing between items.</p>
 
-<p>Use <code>.inline--align-#{start | center | end}</code> to align horizontally.</p>
+  <%= render 'example' do %>
+    <div class="inline inline--space-100">
+      <div class="inline__item">Bananas</div>
+      <div class="inline__item">Beans</div>
+      <div class="inline__item">Bras</div>
+    </div>
+  <% end %>
 
-<%= render 'example' do %>
-  <div class="inline inline--align-center">
-    <div class="inline__item">Bananas</div>
-    <div class="inline__item">Beans</div>
-    <div class="inline__item">Bras</div>
-  </div>
-<% end %>
+  <p>Use <code>.inline--align-#{start | center | end}</code> to align horizontally.</p>
 
-<p>
-  Use <code>.inline--#{sm | md | lg | xl | xxl}-#{modifier}</code> to only
-  apply modifier on certain breakpoints.
-</p>
+  <%= render 'example' do %>
+    <div class="inline inline--align-center">
+      <div class="inline__item">Bananas</div>
+      <div class="inline__item">Beans</div>
+      <div class="inline__item">Bras</div>
+    </div>
+  <% end %>
 
-<%= render 'example' do %>
-  <div class="inline inline--md-space-100">
-    <div class="inline__item">Bananas</div>
-    <div class="inline__item">Beans</div>
-    <div class="inline__item">Bras</div>
-  </div>
-<% end %>
+  <p>
+    Use <code>.inline--#{sm | md | lg | xl | xxl}-#{modifier}</code> to only
+    apply modifier on certain breakpoints.
+  </p>
+
+  <%= render 'example' do %>
+    <div class="inline inline--md-space-100">
+      <div class="inline__item">Bananas</div>
+      <div class="inline__item">Beans</div>
+      <div class="inline__item">Bras</div>
+    </div>
+  <% end %>
+</div>
