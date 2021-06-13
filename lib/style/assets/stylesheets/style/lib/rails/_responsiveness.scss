@@ -1,0 +1,9 @@
+@mixin responsive {
+  @each $breakpoint-name, $breakpoint in $breakpoints {
+    @content ("");
+
+    @media (min-width: $breakpoint) {
+      @content ("#{$breakpoint-name}-");
+    }
+  }
+}

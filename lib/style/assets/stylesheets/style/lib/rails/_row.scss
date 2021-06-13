@@ -3,42 +3,22 @@
   flex-direction: row;
 }
 
-@each $spacing-name, $spacing in $spacings {
-  .row--#{$spacing-name} {
-    gap: $spacing;
-  }
-}
-
-@each $column-size, $value in $column-sizes {
-  .row__column--#{$column-size} {
-    width: $value;
-  }
-}
-
-@each $alignment-name, $alignment in $alignments {
-  .row--#{$alignment-name} {
-    justify-content: $alignment;
-  }
-}
-
-@each $breakpoint-name, $breakpoint in $breakpoints {
-  @media (min-width: $breakpoint) {
-    @each $column-size, $value in $column-sizes {
-      .row__column--#{$breakpoint}-#{$column-size} {
-        width: $value;
-      }
+@include responsive using($breakpoint-name) {
+  @each $spacing-name, $spacing in $spacings {
+    .row--#{$breakpoint-name}#{$spacing-name} {
+      gap: $spacing;
     }
+  }
 
-    @each $spacing-name, $spacing in $spacings {
-      .row--#{$breakpoint-name}-#{$spacing-name} {
-        gap: $spacing;
-      }
+  @each $column-size, $value in $column-sizes {
+    .row__column--#{$breakpoint-name}#{$column-size} {
+      width: $value;
     }
+  }
 
-    @each $alignment-name, $alignment in $alignments {
-      .row--#{$breakpoint-name}-#{$alignment-name} {
-        justify-content: $alignment;
-      }
+  @each $alignment-name, $alignment in $alignments {
+    .row--#{$breakpoint-name}#{$alignment-name} {
+      justify-content: $alignment;
     }
   }
 }
