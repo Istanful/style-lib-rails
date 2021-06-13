@@ -1,1 +1,41 @@
-Hello
+<h2>Stack</h2>
+
+<p>A stack distributes items vertically</p>
+
+<%= render 'example' do %>
+  <div class="stack">
+    <div class="stack__item">Bananas</div>
+    <div class="stack__item">Beans</div>
+    <div class="stack__item">Bras</div>
+  </div>
+<% end %>
+
+<p>Use <code>.stack--#{space-name}</code> to add spacing between items.</p>
+
+<%= render 'example' do %>
+  <div class="stack stack--space-100">
+    <div class="stack__item">Bananas</div>
+    <div class="stack__item">Beans</div>
+    <div class="stack__item">Bras</div>
+  </div>
+<% end %>
+
+<p>Use <code>.stack--align-#{start | center | end}</code> to align vertically.
+
+<%= render 'example' do %>
+  <div class="stack stack--align-center" style="height: 250px">
+    <div class="stack__item">Bananas</div>
+    <div class="stack__item">Beans</div>
+    <div class="stack__item">Bras</div>
+  </div>
+<% end %>
+
+<p>Use <code>.#{type}--#{sm | md | lg | xl | xxl}-#{modifier}</code> to only apply modifier on certain breakpoints.</p>
+
+<%= render 'example' do %>
+  <div class="stack stack--md-space-100">
+    <div class="stack__item">Bananas</div>
+    <div class="stack__item">Beans</div>
+    <div class="stack__item">Bras</div>
+  </div>
+<% end %>

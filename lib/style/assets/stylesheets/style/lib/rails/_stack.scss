@@ -1,0 +1,32 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+@each $spacing-name, $spacing in $spacings {
+  .stack--#{$spacing-name} {
+    gap: $spacing;
+  }
+}
+
+@each $alignment-name, $alignment in $alignments {
+  .stack--#{$alignment-name} {
+    justify-content: $alignment;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $spacing-name, $spacing in $spacings {
+      .stack--#{$breakpoint-name}-#{$spacing-name} {
+        gap: $spacing;
+      }
+    }
+
+    @each $alignment-name, $alignment in $alignments {
+      .stack--#{$breakpoint-name}-#{$alignment-name} {
+        justify-content: $alignment;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="example">
+  <pre class="example__code">
+    <%= raw yield.gsub('<', '&lt;').gsub('>', '&gt;') %>
+  </pre>
+
+  <div class="example__illustration">
+    <%= yield %>
+  </div>
+</div>
