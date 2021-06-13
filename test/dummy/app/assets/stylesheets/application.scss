@@ -16,12 +16,16 @@
 
 @import "style/lib/rails/_variables.scss";
 @import "style/lib/rails/_stack.scss";
+@import "style/lib/rails/_inline.scss";
 
 .stack,
-.stack__item {
+.stack__item,
+.inline,
+.inline__item {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.stack__item {
+.stack__item,
+.inline__item {
   background: cornflowerblue;
 }
