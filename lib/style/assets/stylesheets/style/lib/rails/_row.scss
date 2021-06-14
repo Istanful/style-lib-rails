@@ -1,6 +1,11 @@
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+[class^="row__column"] {
+  width: 100%;
 }
 
 @include responsive using($breakpoint-name) {

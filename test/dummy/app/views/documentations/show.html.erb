@@ -1,8 +1,26 @@
 <div class="container">
-  <div class="stack stack--space-300">
-    <%= render 'container_documentation' %>
-    <%= render 'stack_documentation' %>
-    <%= render 'inline_documentation' %>
-    <%= render 'row_documentation' %>
+  <div class="row">
+    <div class="row__column--md-4">
+      <nav class="position--sticky-top">
+        <h2>Table of contents</h2>
+        <ul>
+          <li><%= link_to 'Container', '#container' %></li>
+          <li><%= link_to 'Stack', '#stack' %></li>
+          <li><%= link_to 'Inline', '#inline' %></li>
+          <li><%= link_to 'Row', '#row' %></li>
+          <li><%= link_to 'Position', '#position' %></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row__column--md-8">
+      <div class="stack stack--space-300">
+        <%= render 'container_documentation' %>
+        <%= render 'stack_documentation' %>
+        <%= render 'inline_documentation' %>
+        <%= render 'row_documentation' %>
+        <%= render 'position_documentation' %>
+      </div>
+    </div>
   </div>
 </div>

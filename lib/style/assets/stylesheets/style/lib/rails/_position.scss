@@ -1,0 +1,19 @@
+@include responsive using($breakpoint-name) {
+  .position--#{$breakpoint-name}relative {
+    position: relative;
+  }
+
+  .position--#{$breakpoint-name}absolute {
+    position: absolute;
+  }
+
+  .position--#{$breakpoint-name}sticky-top {
+    position: sticky;
+    top: 0px;
+  }
+
+  .position--#{$breakpoint-name}sticky-bottom {
+    position: sticky;
+    bottom: 0px;
+  }
+}
