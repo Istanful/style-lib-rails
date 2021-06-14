@@ -1,15 +1,9 @@
 <div class="example">
-  <div class="row">
-    <div class="row__column--md-6">
-      <pre class="example__code">
-        <%= raw yield.gsub('<', '&lt;').gsub('>', '&gt;') %>
-      </pre>
-    </div>
+  <pre class="example__code">
+    <%= raw yield.gsub('<', '&lt;').gsub('>', '&gt;') %>
+  </pre>
 
-    <div class="row__column--md-6">
-      <div class="example__illustration">
-        <%= yield %>
-      </div>
-    </div>
+  <div class="example__illustration">
+    <%= yield %>
   </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="stack stack--space-200">
+  <div class="stack stack--space-100">
+    <h2>Container</h2>
+
+    <p>A container centers content on the page with a max width.</p>
+  </div>
+
+  <%= render 'example' do %>
+    <div class="container">
+      <p>Bananas are nice</p>
+    </div>
+  <% end %>
+
+  <p>Use <code>.container--#{sm | md | lg | xl | xxl}</code> for different sizes.</p>
+
+  <%= render 'example' do %>
+    <div class="container container--sm">
+      <p>Bananas are nice</p>
+    </div>
+  <% end %>
+</div>
