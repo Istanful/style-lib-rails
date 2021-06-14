@@ -1,0 +1,23 @@
+<div class="stack stack--space-200">
+  <div class="stack stack--space-100">
+    <h2 id="padding">Padding</h2>
+
+    <p>Use <code>.padding--#{space-name}</code> to add padding</p>
+  </div>
+
+  <%= render 'example' do %>
+    <div class="padding--space-100">Padded</div>
+  <% end %>
+
+  <p>Use <code>.padding--#{top | right | bottom | left | x | y}-#{space-name}</code> to add padding on different sides.</p>
+
+  <%= render 'example' do %>
+    <div class="padding--left-space-100">Padded on left side</div>
+  <% end %>
+
+  <p>Use <code>.padding--#{breakpoint}-#{space-name}</code> to add padding per breakpoint.</p>
+
+  <%= render 'example' do %>
+    <div class="padding--md-space-100">Padded on medium screens</div>
+  <% end %>
+</div>

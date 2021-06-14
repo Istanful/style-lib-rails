@@ -22,9 +22,11 @@
 @import "style/lib/rails/_row.scss";
 @import "style/lib/rails/_container.scss";
 @import "style/lib/rails/_position.scss";
+@import "style/lib/rails/_padding.scss";
 
 .example__illustration {
   [class^="container"],
+  [class^="padding"],
   .stack,
   .stack__item,
   .inline,

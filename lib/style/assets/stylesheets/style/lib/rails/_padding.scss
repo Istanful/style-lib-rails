@@ -1,0 +1,27 @@
+@include responsive using($breakpoint-name) {
+  @each $spacing-name, $spacing in $spacings {
+    .padding--#{$breakpoint-name}#{$spacing-name} {
+      padding: $spacing;
+    }
+
+    .padding--#{$breakpoint-name}top-#{$spacing-name},
+    .padding--#{$breakpoint-name}y-#{$spacing-name} {
+      padding-top: $spacing;
+    }
+
+    .padding--#{$breakpoint-name}right-#{$spacing-name},
+    .padding--#{$breakpoint-name}x-#{$spacing-name} {
+      padding-right: $spacing;
+    }
+
+    .padding--#{$breakpoint-name}bottom-#{$spacing-name},
+    .padding--#{$breakpoint-name}y-#{$spacing-name} {
+      padding-bottom: $spacing;
+    }
+
+    .padding--#{$breakpoint-name}left-#{$spacing-name},
+    .padding--#{$breakpoint-name}x-#{$spacing-name} {
+      padding-left: $spacing;
+    }
+  }
+}
