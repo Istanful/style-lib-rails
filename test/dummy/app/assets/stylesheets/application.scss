@@ -23,6 +23,7 @@
 @import "style/lib/rails/_container.scss";
 @import "style/lib/rails/_position.scss";
 @import "style/lib/rails/_padding.scss";
+@import "style/lib/rails/_sizing.scss";
 
 .example__illustration {
   [class^="container"],
@@ -38,6 +39,7 @@
 
   .stack__item,
   .inline__item,
+  [class^="width"],
   [class^="row__column"] {
     background: cornflowerblue;
   }

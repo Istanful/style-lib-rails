@@ -2,16 +2,16 @@ $sizings: (
   fourth: 100%/4,
   third: 100%/3,
   half: 50%,
-  full: 100%
+  full: 100%,
 );
 
 @include responsive using($breakpoint-name) {
   @each $key, $value in $sizings {
-    .width--#{$breakpoint-name}-#{$key} {
+    .width--#{$breakpoint-name}#{$key} {
       width: $value;
     }
-  
-    .height--#{$breakpoint-name}-#{key} {
+
+    .height--#{$breakpoint-name}#{$key} {
       height: $value;
     }
   }
