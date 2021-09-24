@@ -7,6 +7,12 @@
     position: fixed;
   }
 
+  .position--#{$breakpoint-name}fixed-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
   .position--#{$breakpoint-name}absolute {
     position: absolute;
   }
