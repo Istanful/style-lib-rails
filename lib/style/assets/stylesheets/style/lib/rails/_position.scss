@@ -3,6 +3,10 @@
     position: relative;
   }
 
+  .position--#{$breakpoint-name}fixed {
+    position: fixed;
+  }
+
   .position--#{$breakpoint-name}absolute {
     position: absolute;
   }
