@@ -1,9 +1,18 @@
-@include responsive using($breakpoint-name) {
-  .width--#{$breakpoint-name}full {
-    width: 100%;
-  }
+$sizings: (
+  fourth: 100/4%,
+  third: 100/3%,
+  half: 50%,
+  full: 100%
+);
 
-  .height--#{$breakpoint-name}full {
-    height: 100%;
+@include responsive using($breakpoint-name) {
+  @each $key, $value in $sizings {
+    .width--#{$breakpoint-name}-#{$key} {
+      width: $value;
+    }
+  
+    .height--#{$breakpoint-name}-#{key} {
+      height: $value;
+    }
   }
 }
