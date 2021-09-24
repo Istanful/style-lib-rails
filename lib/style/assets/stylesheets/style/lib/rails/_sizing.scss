@@ -1,0 +1,9 @@
+@include responsive using($breakpoint-name) {
+  .width--#{$breakpoint-name}full {
+    width: 100%;
+  }
+
+  .height--#{$breakpoint-name}full {
+    height: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="stack stack--space-200">
+  <div class="stack stack--space-100">
+    <h2 id="sizing">Sizing</h2>
+
+    <p>Use <code>.#{width | height}--#{full}</code> to set the size in percent.</p>
+  </div>
+
+  <%= render 'example' do %>
+    <div class="width--full"></div>
+  <% end %>
+
+  <p>Use <code>.#{width | height}--#{breakpoint}-full</code> to set the size per breakpoint.</p>
+
+  <%= render 'example' do %>
+    <div class="width--md-full"></div>
+  <% end %>
+</div>
