@@ -2,6 +2,7 @@
   display: block;
   margin: auto;
   max-width: map-get($breakpoints, "lg");
+  padding: 0 map-get($spacings, "space-100");
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
