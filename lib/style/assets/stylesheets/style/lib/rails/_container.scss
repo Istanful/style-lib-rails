@@ -1,12 +1,14 @@
 .container {
   display: block;
   margin: auto;
-  max-width: map-get($breakpoints, "lg");
+  width: map-get($breakpoints, "lg");
+  max-width: 100%;
   padding: 0 map-get($spacings, "space-100");
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   .container--#{$breakpoint-name} {
-    max-width: $breakpoint;
+    width: $breakpoint;
+    max-width: 100%;
   }
 }
