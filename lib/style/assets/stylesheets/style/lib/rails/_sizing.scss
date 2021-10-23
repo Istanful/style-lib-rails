@@ -1,18 +1,30 @@
 $sizings: (
-  fourth: 100%/4,
-  third: 100%/3,
-  half: 50%,
   full: 100%,
+  half: 50%,
+  third: 100%/3,
+  fourth: 100%/4,
 );
 
-@include responsive using($breakpoint-name) {
-  @each $key, $value in $sizings {
-    .width--#{$breakpoint-name}#{$key} {
-      width: $value;
-    }
+@each $key, $value in $sizings {
+  .width--#{$key} {
+    width: $value;
+  }
 
-    .height--#{$breakpoint-name}#{$key} {
-      height: $value;
+  .height--#{$key} {
+    height: $value;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $sizings {
+      .width--#{$breakpoint-name}#{$key} {
+        width: $value;
+      }
+
+      .height--#{$breakpoint-name}#{$key} {
+        height: $value;
+      }
     }
   }
 }
