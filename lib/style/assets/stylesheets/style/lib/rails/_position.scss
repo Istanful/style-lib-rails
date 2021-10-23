@@ -17,6 +17,12 @@
     position: absolute;
   }
 
+  .position--#{$breakpoint-name}absolute-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   .position--#{$breakpoint-name}sticky-top {
     position: sticky;
     top: 0px;
