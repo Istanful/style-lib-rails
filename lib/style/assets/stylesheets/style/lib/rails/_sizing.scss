@@ -18,11 +18,11 @@ $sizings: (
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $sizings {
-      .width--#{$breakpoint-name}#{$key} {
+      .width--#{$breakpoint-name}-#{$key} {
         width: $value;
       }
 
-      .height--#{$breakpoint-name}#{$key} {
+      .height--#{$breakpoint-name}-#{$key} {
         height: $value;
       }
     }
